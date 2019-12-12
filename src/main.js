@@ -4,17 +4,14 @@ import {createAppContainer} from 'react-navigation';
 import ShoppingList from './screens/ShoppingList';
 import AddProduct from './screens/AddProduct.js';
 
-const Navigator = createStackNavigator(
-  {
-    ShoppingList: {
-      screen: ShoppingList,
-    },
-    AddProduct: {
-      screen: AddProduct,
-    },
+const Navigator = createStackNavigator({
+  ShoppingList: {
+    screen: ShoppingList,
   },
-  {initialRouteName: 'AddProduct'},
-);
+  AddProduct: {
+    screen: AddProduct,
+  },
+});
 
 const AppContainer = createAppContainer(Navigator);
 
